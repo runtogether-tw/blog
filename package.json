@@ -1,0 +1,32 @@
+{
+  "name": "rt-blog",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "dev": "gridsome develop",
+    "explore": "gridsome explore",
+    "lint": "eslint --fix src/**/*.{js,vue}"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "@gridsome/vue-remark": "^0.2.6",
+    "axios": "^0.21.1",
+    "gridsome": "^0.7.23",
+    "gridsome-plugin-remark-twitter": "^0.2.1",
+    "unist-util-visit": "^2.0.3",
+    "vuetify": "^2.5.8",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "node-sass": "^4.14.0",
+    "sass-loader": "^8.0.2",
+    "vue-eslint-parser": "^7.0.0"
+  }
+}

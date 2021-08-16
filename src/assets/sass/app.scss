@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700|Roboto:400,500,700&display=swap&subset=chinese-traditional');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  .v-application {
+    font-family: 'Roboto', 'Noto Sans TC', '微軟正黑體', 'Arial', 'sans-serif' !important;
+    a {
+        color: #EEEEEE;
+        text-decoration: none;
+        transition: color 0.2s;
+        &:hover {
+          color: #4BB660;
+        }
+        .v-icon {
+          &:hover {
+            color: #4BB660;
+          }
+        }
+    }
+    .pointer {
+      cursor: pointer;
+      .v-chip {
+        cursor: pointer;
+      }
+    }
+    @media (min-width: 1904px){
+      .container {
+          max-width: 1185px;
+      }
+    }
+    .v-card {
+      overflow: hidden;
+    }
+    .text-shadow {
+      text-shadow: 2px 2px #333333;
+    }
+  }
+  margin:0;
+  padding:0;
+  line-height: 1.5;
+  background-color: #121212;
+  color: #EEEEEE;
+}
+
+.Sidebar {
+  &__menuBlock {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    hr {
+      margin-bottom: 5px;
+    }
+  }
+  &__sticky {
+    position: sticky;
+    top: 70px;
+  }
+  &__anchor {
+    &--2 {
+      padding: 5px;
+      font-size: 0.9rem;
+      border-top: 1px #333333 solid;
+    }
+    &--3 {
+      margin-left: 10px;
+      padding: 5px;
+      font-size: .8rem;
+      opacity: .8;
+    }
+  }
+}
+
+.PostList {
+  &__menuBlock {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    hr {
+      margin-bottom: 5px;
+    }
+  }
+  &__pagination {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      background-color: #1E1E1E;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      height: 32px;
+      width: 32px;
+      margin: 0.3rem 5px;
+      &.active {
+        pointer-events: none;
+        background-color: #4BB660;
+      }
+      &:hover {
+        background-color: #333333;
+      }
+    }
+  }
+}
