@@ -40,7 +40,7 @@ rule: 透過產生器產生的speedrun規則
 tags: [tag1, tag2]
 ---
 ```
-[speedrun.com rule產生器](/speedrun-generator)  
+[speedrun.com rule產生器](/blog/speedrun-generator)  
 game與rule設定好後會在文章最上方產生該rule的排行榜。  
 文章的撰寫與twitch下方的個人區塊相同，使用的是**markdown**，但針對特殊插入內容做了額外調整。  
 
