@@ -17,8 +17,8 @@
       <div class="GameCard__text">
         <div class="GameCard__title">{{ gameData.game.data.names.international }}</div>
         <div class="GameCard__platforms white--text text--darken-1">
-          <div v-for="(p, index) in gameData.game.data.platforms.data" :key="p.id">
-            <template v-if="index !== 0">, </template>{{p.name}}
+          <div v-if="gameData.game.data.platforms.data">
+            {{ gameData.game.data.platforms.data.map((e) => (e.name)).join(', ') }}
           </div>
         </div>
         <div class="GameCard__category white--text text--darken-1">
@@ -44,7 +44,7 @@
             <tr v-for="r in gameData.runs" :key="r.run.id">
               <td class="text-center">
                 <img class="GameCard__trophy" v-if="r.place >=1 && r.place <=3"
-                  :src="`https://www.speedrun.com/themes/Default/${rankList[r.place]}.png`">
+                  :src="`https://www.speedrun.com/images/${rankList[r.place]}.png`">
                 {{ rankList[r.place] }}
               </td>
               <td>
