@@ -3,16 +3,12 @@ import DefaultLayout from '@/layouts/Default.vue';
 import '@/assets/sass/app.scss';
 import 'vuetify/dist/vuetify.min.css';
 
-const pathPrefix = '/blog';
+const pathPrefix = process.env.GRIDSOME_PREFIX_URL || '';
 
 export default function (Vue, { appOptions, router, head, isClient }) { // eslint-disable-line
   head.link.push({
     rel: 'stylesheet',
     href: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css',
-  });
-  head.script.push({
-    src: 'https://platform.twitter.com/widgets.js',
-    body: false,
   });
   head.script.push({
     src: `${pathPrefix}/js/embed.js`,

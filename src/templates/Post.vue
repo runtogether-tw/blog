@@ -52,6 +52,9 @@ export default {
     if (this.hash) {
       window.scrollTo({ top: document.querySelector(decodeURI(this.hash)).offsetTop - 70, behavior: 'smooth' });
     }
+    if (window.twttr) {
+      window.twttr.widgets.load();
+    }
   },
   beforeRouteEnter(to, from, next) {
     next((vm) => {

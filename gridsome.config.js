@@ -1,5 +1,5 @@
 const imgPlugin = require('./src/plugins/img');
-const pathPrefix = '/blog';
+const pathPrefix = process.env.GRIDSOME_PREFIX_URL || '';
 
 module.exports = {
   siteName: 'Run Together TW',
