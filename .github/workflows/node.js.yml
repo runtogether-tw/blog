@@ -20,7 +20,8 @@ jobs:
         node-version: '12.x'
     - run: npm install
     - run: npm run build
-
+      env:
+        GRIDSOME_PREFIX_URL: '/blog'
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
